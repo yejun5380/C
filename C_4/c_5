@@ -229,7 +229,70 @@ int main(void)
 }
 ~~~
 
+10주차
+
 ~~~c
+#include <stdio.h>
+
+int get_integer()
+{
+  int value;
+  printf("정수를 입력하시오: ");
+  scanf("%d", &value);
+  return value;
+}
+
+int add(int x, int y)
+{
+  return x + y;
+}
+int main(void)
+{
+  int x = get_integer();
+  int y = get_integer();
+
+  int sum = add(x, y);
+  printf("두수의 합은 %d입니다.\n", sum);
+  return 0;
+}
+~~~
+
+~~~c
+#include <stdio.h>
+int factorial(int n)
+{
+  if(n==1);
+      return 1;
+  else
+      return n*factorial(n-1);
+}
+int main()
+{
+  int n;
+  printf("수를 입력하시오: ");
+  scanf("%d", &n);
+  printf("%d", factorial(n));
+
+  return 0;
+}
+~~~
+~~~c
+#include <stdio.h>
+
+int main()
+{
+  int n=10;
+  double k = 0;
+  k = n;
+  printf("%%d : %d, %%lf : %lf", k,k);
+
+  return 0;
+}
+~~~
+
+~~~c
+
+
 
 
 
